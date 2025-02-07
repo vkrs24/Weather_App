@@ -121,6 +121,10 @@ body {
 }
 
 @media screen and (max-width: 650px) {
+  .weather_container {
+    max-height: auto;
+  }
+
   .head {
     font-size: 2.4rem;
     margin-top: 0;
