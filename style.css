@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(20, 66, 86);
+  overflow-x: hidden;
+}
+
+.weather_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  color: rgb(255, 250, 250);
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.box {
+  max-width: 70%;
+  background-color: rgb(14, 199, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.vertical_content_1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.horizontal_content_1 input {
+  max-width: 12rem;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+.horizontal_content_2 .fa-solid {
+  padding: 1rem;
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+  color: rgb(53, 53, 53);
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.vertical_content_2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vertical_content_2 .content_1 {
+  width: 8rem;
+  padding: 1rem;
+}
+
+.vertical_content_2 .content_1 img {
+  width: 100%;
+}
+
+.vertical_content_2 .content_2 p {
+  font-size: 4rem;
+  margin: 0;
+  padding: 1rem;
+  color: white;
+}
+
+.vertical_content_2 .content_3 p {
+  font-size: 3rem;
+  margin: 0;
+  padding: 1rem;
+  color: white;
+}
+
+.vertical_content_3 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.horizontal_content1 {
+  display: flex;
+  width: 40%;
+  align-items: center;
+}
+
+.horizontal_content2 {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.content_1 img {
+  width: 3rem;
+}
+
+.content_2 div p {
+  font-size: 1.8 rem;
+  margin: 0;
+  color: white;
+}
+
+.content_2 .name p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: white;
+}
+
+@media screen and (max-width: 650px) {
+  .head {
+    font-size: 2.4rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .box {
+    padding: 2.5rem;
+  }
+
+  .content_2 div p {
+    font-size: 1.5rem;
+  }
+
+  .content_2 .name p {
+    font-size: 1.2rem;
+  }
+
+  .vertical_content_3 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .horizontal_content1 {
+    display: flex;
+    width: 40%;
+    align-items: center;
+  }
+
+  .horizontal_content2 {
+    display: flex;
+    width: 50%;
+  }
+
+  .content_1 img {
+    width: 2.5rem;
+    padding: 0.2rem;
+  }
+}
