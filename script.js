@@ -1,8 +1,5 @@
 const search_btn = document.querySelector(".horizontal_content_2");
 
-let cityname = "Chennai";
-checkweather(cityname);
-
 function kelvinToCelsius(kelvin) {
   return kelvin - 273.15;
 }
@@ -37,8 +34,8 @@ async function checkweather(cityname) {
     document.querySelector(".weather_img").src = "images/fog.png";
   } else if (rsp_msg.weather[0].main == "Clear") {
     document.querySelector(".weather_img").src = "images/sun.png";
-  } else if (rsp_msg.weather[0].main == "Cloudy") {
-    document.querySelector(".weather_img").src = "images/cloudy (1).png";
+  } else if (rsp_msg.weather[0].main == "Clouds") {
+    document.querySelector(".weather_img").src = "images/clouds.png";
   } else if (rsp_msg.weather[0].main == "Rain") {
     document.querySelector(".weather_img").src = "images/heavy-rain.png";
   } else if (rsp_msg.weather[0].main == "Snow") {
@@ -47,6 +44,9 @@ async function checkweather(cityname) {
     document.querySelector(".weather_img").src = "images/haze.png";
   }
 }
+
+let cityname = "Chennai";
+checkweather(cityname);
 
 search_btn.addEventListener("click", () => {
   let cityname = document.querySelector(".input_text"); // Retrieve value inside the event listener

@@ -135,12 +135,15 @@ body {
     padding: 2.5rem;
   }
 
+  .vertical_content_2 .content_3 p {
+    text-align: center;
+  }
   .content_2 div p {
     font-size: 1.5rem;
   }
 
   .content_2 .name p {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
 
   .vertical_content_3 {
