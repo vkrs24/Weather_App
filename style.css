@@ -120,6 +120,11 @@ body {
   color: white;
 }
 
+.copy_cnt {
+  text-align: center;
+  color: white;
+}
+
 @media screen and (max-width: 650px) {
   .weather_container {
     max-height: auto;
