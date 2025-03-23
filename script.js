@@ -15,6 +15,9 @@ async function checkweather(cityname) {
 
   console.log(rsp_msg);
 
+  if (rsp_msg.name === undefined) {
+    return alert("Enter City Name correctly");
+  }
   document.querySelector(".city").innerHTML = rsp_msg.name;
 
   let kelvinTemp = rsp_msg.main.temp;
